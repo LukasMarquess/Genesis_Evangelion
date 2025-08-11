@@ -1,0 +1,27 @@
+{
+  "name": "genesis_evangelion",
+  "version": "1.0.0",
+  "description": "Landing Page sobre \"Neon Genesis Evangelion\"",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukasMarquess/Genesis_Evangelion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LukasMarquess/Genesis_Evangelion/issues"
+  },
+  "homepage": "https://github.com/LukasMarquess/Genesis_Evangelion#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.90.0"
+  }
+}
