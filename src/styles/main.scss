@@ -1,5 +1,42 @@
-$bgcolor: rgb(115, 255, 0);
+@use 'hero';
+@use 'variaveis';
+@use 'sobre';
 
-body {
-    background-color: $bgcolor;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$cor-principal;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+@mixin title($fontSize: 32px) {
+    @include text($fontSize);
+    color: variaveis.$cor-principal;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.title--hero{
+    @include title(28px);
+}
+
+.title--sobre{
+    @include title(24px);
+}
+
+.text--sobre{
+    @include text(20px);
 }
