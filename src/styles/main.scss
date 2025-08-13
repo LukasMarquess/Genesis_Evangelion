@@ -2,6 +2,8 @@
 @use 'variaveis';
 @use 'sobre';
 @use 'abas';
+@use 'films';
+@use 'assisti';
 
 * {
     margin: 0;
@@ -30,22 +32,19 @@
     "wdth" 100;
 }
 
-.title--hero{
+.title{
     @include title(28px);
 }
 
-.title--sobre{
-    @include title(28px);
-}
-
-.text--sobre{
+.text{
     @include text(20px);
 }
 
-.title--abas{
-    @include title(28px);
+.grid--center{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
 }
 
-.text--abas{
-    @include text(20px);
-}
+

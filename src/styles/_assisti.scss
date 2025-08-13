@@ -1,0 +1,23 @@
+@use 'variaveis';
+
+.ondeassistir{
+    padding: 2vw 5.6vw;
+    background-color: variaveis.$cordefundo;
+
+    h2{
+        text-align: center;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-top: 44px;
+
+        &__item{
+            img{
+                max-width: 350px;
+            }
+        }
+    }
+}
