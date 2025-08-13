@@ -1,0 +1,54 @@
+@use 'variaveis';
+
+.abas{
+    padding: 2vw 5.6vw;
+    background-color: variaveis.$cordefundo;
+
+    &__list{
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        margin-top: 44px;
+
+        &--active{
+            display: grid;
+        }
+
+        &__item{
+            img{
+                max-width: 100%;
+                max-height: 800px;
+                height: 800px;
+                width: 570px;
+                border-radius: 10px;
+
+            }
+
+            p{
+                text-align: center;
+                padding-top: 15px;
+            }
+        }
+    }
+
+    &__tabs{
+        display: flex;
+        justify-content: center;
+
+        &__button{
+            color: variaveis.$cor-principal;
+            font-size: 20px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+
+            &--active{
+                border-color: variaveis.$cor-principal;
+            }
+        }
+    }
+}

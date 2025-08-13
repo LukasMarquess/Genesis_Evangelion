@@ -1,6 +1,7 @@
 @use 'hero';
 @use 'variaveis';
 @use 'sobre';
+@use 'abas';
 
 * {
     margin: 0;
@@ -34,9 +35,17 @@
 }
 
 .title--sobre{
-    @include title(24px);
+    @include title(28px);
 }
 
 .text--sobre{
+    @include text(20px);
+}
+
+.title--abas{
+    @include title(28px);
+}
+
+.text--abas{
     @include text(20px);
 }
