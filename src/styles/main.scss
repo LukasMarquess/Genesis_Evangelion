@@ -4,6 +4,8 @@
 @use 'abas';
 @use 'films';
 @use 'assisti';
+@use 'faq';
+@use 'footer';
 
 * {
     margin: 0;
@@ -33,11 +35,15 @@
 }
 
 .title{
-    @include title(28px);
+    @include title(34px);
 }
 
 .text{
     @include text(20px);
+}
+
+.title--faqquestion{
+    @include title(24px);
 }
 
 .grid--center{

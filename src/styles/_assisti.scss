@@ -20,4 +20,22 @@
             }
         }
     }
+
+    @media screen and (max-width: 640px) {
+
+        h2{
+            font-size: 25px;
+        }
+        
+        .ondeassistir__list {
+            grid-template-columns: 1fr;
+        }
+
+        img{
+            height: 150px;
+            width: 200px;
+            border-radius: 10px;
+        }
+    }
+
 }

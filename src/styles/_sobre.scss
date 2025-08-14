@@ -26,4 +26,56 @@
             }
         }
     }
+
+    @media screen and (max-width: 640px) {
+
+        .sobre__content{
+            flex-direction: column;
+
+            .grid--center{
+                padding-left: 0%;
+            }
+
+            img {
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+
+            h2{
+                font-size: 25px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+
+
+    @media screen  and (max-width: 1023px) and (min-width: 641px){
+
+        .sobre__content{
+            flex-direction: column;
+            align-items: center;
+
+            .grid--center{
+                padding-left: 0%;
+            }
+
+            img {
+                width: 700px;
+                height: 400px;
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+
+            h2{
+                font-size: 34px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+        }
+    }
 }
